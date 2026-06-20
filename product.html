@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanjore Painting - Parampara Handicrafts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Parampara Handicrafts</span>
+      <span class="logo-est">Est. 1998</span>
+    </a>
+    <ul class="nav">
+      <li><a href="#">Paintings</a></li>
+      <li><a href="#">Statues</a></li>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">My Cart</a></li>
+    </ul>
+    <div class="header-icons">
+      <a href="#" title="Search"><i data-feather="search"></i></a>
+      <a href="#" title="Account"><i data-feather="user"></i></a>
+      <a href="#" title="Wishlist"><i data-feather="heart"></i></a>
+      <a href="#" title="Cart"><i data-feather="shopping-bag"></i><span class="cart-badge">0</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="product-page-section">
+  <div class="container product-layout">
+    
+    <div class="product-gallery">
+      <img src="images/prod1.png" alt="Authentic Tanjore Painting" class="main-product-img" id="dynamic-img" />
+    </div>
+
+    <div class="product-details-info">
+      <p class="product-breadcrumbs">Home / Collections / <strong id="dynamic-breadcrumb">Painting</strong></p>
+      
+      <h1 class="product-page-title" id="dynamic-title">Authentic Tanjore Painting</h1>
+      
+      <p class="product-page-price">₹<span id="dynamic-price">22,450</span> <span class="tax-info">(Inclusive of all taxes)</span></p>
+      
+      <div class="gold-divider" style="margin: 20px 0;"></div>
+
+      <p class="product-dummy-desc">
+        Bring divine elegance into your space with this authentic Tanjore Painting. Handcrafted by master artisans using traditional techniques, this masterpiece features 24K pure gold foil, vibrant semi-precious stones, and rich natural colors. Arrives beautifully encased in a premium, shatter-resistant teak wood frame.
+      </p>
+
+      <div class="form-group">
+        <label for="size-select" class="dropdown-label">Select Frame Size</label>
+        <select id="size-select" class="size-dropdown">
+          <option value="" disabled selected>Choose a size...</option>
+          <option value="12x15">12" x 15" (Standard)</option>
+          <option value="16x20">16" x 20" (Medium)</option>
+          <option value="18x22">18" x 22" (Large)</option>
+          <option value="24x30">24" x 30" (Statement Piece)</option>
+        </select>
+      </div>
+
+      <div class="product-action-row">
+        <button class="btn checkout-btn">Add to Cart</button>
+      </div>
+      
+      <ul class="product-perks">
+        <li>✦ 100% Authentic Handcrafted Art</li>
+        <li>✦ Ships securely framed within 48 hours</li>
+        <li>✦ 7-Day Hassle-Free Returns</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Parampara Handicrafts</div>
+      <p>Parampara Handicrafts has been a trusted name in authentic Kanchipuram Tanjore Paintings for over 27 years. Rooted in tradition, crafted with love.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+919962712299">+91 99627 12299</a></li>
+        <li><a href="#" class="footer-hours">Mon–Sat: 9am – 8pm IST</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace();
+
+  // MAGIC SCRIPT: This grabs the URL data and updates the page
+  document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    const productName = urlParams.get('name');
+    const productImg = urlParams.get('img');
+    const productPrice = urlParams.get('price');
+
+    if (productName) {
+      document.getElementById('dynamic-title').textContent = productName;
+      document.getElementById('dynamic-breadcrumb').textContent = productName;
+      document.title = productName + " - Parampara Handicrafts";
+    }
+    
+    if (productImg) {
+      document.getElementById('dynamic-img').src = productImg;
+      document.getElementById('dynamic-img').alt = productName;
+    }
+
+    if (productPrice) {
+      document.getElementById('dynamic-price').textContent = productPrice;
+    }
+  });
+</script>
+</body>
+</html>

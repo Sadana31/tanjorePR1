@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parampara Handicrafts — Authentic Tanjore Paintings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <div class="loader-wordmark">Parampara Handicrafts</div>
+</div>
+
+<!-- Kolam divider template — actual site SVG (405×9 wave) -->
+<template id="kolam-tpl">
+  <div class="kolam-divider">
+    <img src="images/kolam-divider.svg" alt="" class="kolam-img" />
+  </div>
+</template>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  <div class="announcement-track">
+    <span>✦ Free shipping on orders above ₹5,000</span>
+    <span>✦ 27 Years of Trust</span>
+    <span>✦ Easy Returns &amp; Exchanges</span>
+    <span>✦ Handcrafted by Master Artisans</span>
+    <span>✦ Free shipping on orders above ₹5,000</span>
+    <span>✦ 27 Years of Trust</span>
+    <span>✦ Easy Returns &amp; Exchanges</span>
+    <span>✦ Handcrafted by Master Artisans</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <span class="logo-text">Parampara Handicrafts</span>
+      <span class="logo-est">Est. 1998</span>
+    </a>
+    <ul class="nav">
+      <li>
+        <a href="#">Paintings</a>
+
+      </li>
+      <li>
+        <a href="#">Statues</a>
+
+      </li>
+      <li><a href="#">Collections</a></li>
+      <li>
+        <a href="#">Blogs</a>
+
+      </li>
+      <li>
+        <a href="#">Orders</a>
+
+      </li>
+      <li><a href="#">My Cart</a></li>
+    </ul>
+    <div class="header-icons">
+      <a href="#" title="Search"><i data-feather="search"></i></a>
+      <a href="#" title="Account"><i data-feather="user"></i></a>
+      <a href="#" title="Wishlist"><i data-feather="heart"></i></a>
+      <a href="#" title="Cart">
+        <i data-feather="shopping-bag"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Slider -->
+<section class="hero">
+  <div class="slide active">
+    <img src="images/hero1.webp" alt="New Collection" />
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p class="slide-tag">New Arrivals 2025</p>
+      <h1 class="slide-title">Paintings of<br />Tradition &amp;<br />Grandeur</h1>
+      <a href="#" class="btn-primary">Explore Collection</a>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="images/hero2.webp" alt="By Collection" />
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p class="slide-tag">Curated Collections</p>
+      <h1 class="slide-title">Authentic<br />Tanjore Paintings</h1>
+      <a href="#" class="btn-primary">Shop Now</a>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="images/hero3.webp" alt="Wedding Collection" />
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <p class="slide-tag">Wedding Season</p>
+      <h1 class="slide-title">Your Favorite<br />Idols in Gold</h1>
+      <a href="#" class="btn-primary">Bridal Collection</a>
+    </div>
+  </div>
+  <div class="hero-frame"></div>
+  <button class="slider-arrow slider-prev" id="prev-btn">&#8592;</button>
+  <button class="slider-arrow slider-next" id="next-btn">&#8594;</button>
+  <div class="slider-dots">
+    <button class="dot active" data-slide="0"></button>
+    <button class="dot" data-slide="1"></button>
+    <button class="dot" data-slide="2"></button>
+  </div>
+</section>
+
+<!-- ribbon-top.svg tops every content section -->
+<div class="section-ribbon"><img src="images/ribbon-top.svg" alt="" /></div>
+
+<!-- Categories -->
+<section class="categories">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-label">Browse By</p>
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="gold-divider"></div>
+      </div>
+      <a href="#" class="view-all">View All &rarr;</a>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card reveal reveal-delay-1">
+        <img src="images/cat1.webp" alt="Kanchipuram Golds" />
+        <div class="cat-overlay"><span class="cat-name">Tanjore Paintings</span></div>
+      </div>
+      <div class="cat-card reveal reveal-delay-2">
+        <img src="images/cat2.webp" alt="Designer Sarees" />
+        <div class="cat-overlay"><span class="cat-name">Bronze statues</span></div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<div class="section-ribbon"><img src="images/ribbon-bottom.svg" alt="" /></div>
+
+
+<section>
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-label">Most Loved</p>
+        <h2 class="section-title">Trending Products</h2>
+        <div class="gold-divider"></div>
+      </div>
+      <a href="#" class="view-all">View All &rarr;</a>
+    </div>
+    <div class="kolam-slot"></div>
+    <div class="products-grid">
+      
+      <div class="product-card reveal reveal-delay-1">
+        <div class="product-image-wrap">
+          <span class="product-badge">New</span>
+          <img src="images/prod1.png" alt="Peacock Painting" class="main-product-img" />
+          <div class="product-actions">
+            <a href="product.html?name=Peacock%20Painting&img=images/prod1.png&price=22,450" class="btn" style="text-decoration: none;">Add to Cart</a>
+          </div>
+        </div>
+        <p class="product-name">Peacock Painting</p>
+        <p class="product-color">Deep Maroon &amp; Gold</p>
+        <p class="product-price">₹22,450</p>
+      </div>
+
+      <div class="product-card reveal reveal-delay-2">
+        <div class="product-image-wrap">
+          <img src="images/prod2.png" alt="Lord Muruga" />
+          <div class="product-actions">
+            <a href="product.html?name=Lord%20Muruga&img=images/prod2.png&price=27,554" class="btn" style="text-decoration: none;">Add to Cart</a>
+          </div>
+        </div>
+        <p class="product-name">Lord Muruga</p>
+        <p class="product-color">Royal Blue &amp; Silver</p>
+        <p class="product-price">₹27,554</p>
+      </div>
+
+      <div class="product-card reveal reveal-delay-3">
+        <div class="product-image-wrap">
+          <span class="product-badge">Trending</span>
+          <img src="images/prod3.png" alt="Vishnu 24K" />
+          <div class="product-actions">
+            <a href="product.html?name=Vishnu%2024K&img=images/prod3.png&price=17,024" class="btn" style="text-decoration: none;">Add to Cart</a>
+          </div>
+        </div>
+        <p class="product-name">Vishnu 24K</p>
+        <p class="product-color">Forest Green</p>
+        <p class="product-price">₹17,024 <span class="original">₹21,000</span></p>
+      </div>
+
+      <div class="product-card reveal reveal-delay-4">
+        <div class="product-image-wrap">
+          <img src="images/prod4.png" alt="Floral Painting" />
+          <div class="product-actions">
+            <a href="product.html?name=Floral%20Painting&img=images/prod4.png&price=19,800" class="btn" style="text-decoration: none;">Add to Cart</a>
+          </div>
+        </div>
+        <p class="product-name">Floral Painting</p>
+        <p class="product-color">Peacock Blue</p>
+        <p class="product-price">₹19,800</p>
+      </div>
+
+      <div class="product-card reveal reveal-delay-5">
+        <div class="product-image-wrap">
+          <span class="product-badge">Best Seller</span>
+          <img src="images/prod5.png" alt="Radha and Krishna" />
+          <div class="product-actions">
+            <a href="product.html?name=Radha%20and%20Krishna&img=images/prod5.png&price=23,990" class="btn" style="text-decoration: none;">Add to Cart</a>
+          </div>
+        </div>
+        <p class="product-name">Radha and Krishna</p>
+        <p class="product-color">Ivory &amp; Rose Gold</p>
+        <p class="product-price">₹23,990</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="section-ribbon"><img src="images/ribbon-bottom.svg" alt="" /></div>
+
+
+<!-- USP Strip -->
+<div class="usp-strip">
+  <div class="container">
+    <div class="usp-grid">
+      <div class="usp-item">
+        <div class="usp-icon">✦</div>
+        <p class="usp-title">100% Authentic</p>
+        <p class="usp-desc">Certified pure 24K Gold</p>
+      </div>
+      <div class="usp-item">
+        <div class="usp-icon">◈</div>
+        <p class="usp-title">Free Shipping</p>
+        <p class="usp-desc">On all orders above ₹5,000</p>
+      </div>
+      <div class="usp-item">
+        <div class="usp-icon">❋</div>
+        <p class="usp-title">Easy Returns</p>
+        <p class="usp-desc">Hassle-free 7-day return policy</p>
+      </div>
+      <div class="usp-item">
+        <div class="usp-icon">⊕</div>
+        <p class="usp-title">27 Years Trust</p>
+        <p class="usp-desc">Serving since 1998 with pride</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-ribbon"><img src="images/ribbon-top.svg" alt="" /></div>
+
+
+<!-- Newsletter -->
+<div class="newsletter">
+  <div class="newsletter-frame"></div>
+  <p class="section-label">Stay in the Loop</p>
+  <h2 class="section-title">Get Exclusive Offers &amp; New Arrivals</h2>
+  <p>Subscribe for the latest collections, offers, and styling inspiration.</p>
+  <form class="nl-form" onsubmit="return false;">
+    <input type="email" placeholder="Enter your email address" />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer>
+  <!-- ribbon-top above footer -->
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Parampara Handicrafts</div>
+      <p>Parampara Handicrafts has been a trusted name in authentic Kanchipuram Tanjore Paintings for over 27 years. Rooted in tradition, crafted with love.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">yt</a>
+        <a href="#" class="social-btn">ig</a>
+      </div>
+    </div>
+    <!-- vertical divider between brand and first col -->
+    <div class="footer-v-div"><img src="images/footer-divider-v.svg" alt="" /></div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+919962712299">+91 99627 12299</a></li>
+        <li><a href="#">Email Us</a></li>
+        <li><a href="#" class="footer-hours">Mon–Sat: 9am – 8pm IST</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 Parampara Handicrafts. All rights reserved.</span>
+    <span>Made with ♡ in Kanchipuram</span>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace();
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
