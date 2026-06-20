@@ -14,6 +14,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   --dark: #1a1a1a;
   --light: #f9f7f4;
   --border: #e8e0d4;
+  --maroon: #771800;
   --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 
@@ -154,9 +155,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     align-items: center;
     justify-content: center;
     padding: 10px 24px; /* Slightly smaller to fit inside product cards */
-    background: transparent;
-    color: #ffffff; /* Changed to dark so it shows on light images */
-    border: 2px solid #ffffff;
+    background: #f0efef;
+    color: var(--maroon); /* Changed to dark so it shows on light images */
+    border: 2px solid var(--maroon);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -317,8 +318,15 @@ section { padding: 72px 0; }
 .product-image-wrap { position: relative; overflow: hidden; aspect-ratio: 3/4; background: var(--light); margin-bottom: 14px; }
 .product-image-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
 .product-card:hover .product-image-wrap img { transform: scale(1.06); }
-.product-actions { position: absolute; bottom: 16px; left: 0; right: 0; display: flex; justify-content: center; gap: 8px; opacity: 0; transform: translateY(12px); transition: opacity 0.3s, transform 0.3s; }
-.product-card:hover .product-actions { opacity: 1; transform: translateY(0); }
+.product-actions { 
+  position: absolute; 
+  bottom: 16px; 
+  left: 0; 
+  right: 0; 
+  display: flex; 
+  justify-content: center; 
+  gap: 8px; 
+}
 .action-btn { padding: 10px 20px; background: #1a1a1a; color: #fff; font-family: 'Lato', sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; transition: background 0.25s; }
 .action-btn:hover { background: var(--gold); }
 .wishlist-btn { width: 40px; height: 40px; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; color: #888; transition: color 0.25s; }
