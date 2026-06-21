@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import Navbar from '../components/Navbar';
 
 const localReels = [
-  { id: 1, videoSrc: "src/images/reel1.mp4", thumbnail: "src/images/cat1.webp" },
-  { id: 2, videoSrc: "src/images/reel2.mp4", thumbnail: "src/images/cat2.webp" },
-  { id: 3, videoSrc: "src/images/reel3.mp4", thumbnail: "src/images/hero2.webp" }
+  { id: 1, videoSrc: "/images/reel1.mp4", thumbnail: "/images/cat1.webp" },
+  { id: 2, videoSrc: "/images/reel2.mp4", thumbnail: "/images/cat2.webp" },
+  { id: 3, videoSrc: "/images/reel3.mp4", thumbnail: "/images/hero2.webp" }
 ];
 
 const blogPosts = [
-  { id: 1, title: "The Legacy of Tanjore: A Tale of Gold and Devotion", image: "src/images/cat1.webp", date: "June 12, 2026", excerpt: "Discover the intricate and sacred process behind authentic 24K gold Tanjore paintings that pass down through generations." },
-  { id: 2, title: "How to Choose the Perfect Bronze Idol for your Home", image: "src/images/cat2.webp", date: "May 28, 2026", excerpt: "A comprehensive guide to identifying authentic panchaloha and bronze statues for your pooja room or living space." },
-  { id: 3, title: "Vastu Shastra and the Placement of Divine Idols", image: "src/images/hero2.webp", date: "April 15, 2026", excerpt: "Learn the traditional rules of Vastu to maximize positive energy when placing deities and handcrafted art in your home." }
+  { id: 1, title: "The Legacy of Tanjore: A Tale of Gold and Devotion", image: "/images/cat1.webp", date: "June 12, 2026", excerpt: "Discover the intricate and sacred process behind authentic 24K gold Tanjore paintings that pass down through generations." },
+  { id: 2, title: "How to Choose the Perfect Bronze Idol for your Home", image: "/images/cat2.webp", date: "May 28, 2026", excerpt: "A comprehensive guide to identifying authentic panchaloha and bronze statues for your pooja room or living space." },
+  { id: 3, title: "Vastu Shastra and the Placement of Divine Idols", image: "/images/hero2.webp", date: "April 15, 2026", excerpt: "Learn the traditional rules of Vastu to maximize positive energy when placing deities and handcrafted art in your home." }
 ];
 
 const Home = () => {
@@ -21,17 +21,17 @@ const Home = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const slides = [
-    { id: 0, videoSrc: "src/images/reel4.mp4", tag: "New Arrivals 2025", title: "Paintings of\nTradition &\nGrandeur", btnText: "Explore Collection" },
-    { id: 1, videoSrc: "src/images/reel5.mp4", tag: "Curated Collections", title: "Authentic\nTanjore Paintings", btnText: "Shop Now" },
-    { id: 2, videoSrc: "src/images/reel6.mp4", tag: "Wedding Season", title: "Your Favorite\nIdols in Gold", btnText: "Bridal Collection" }
+    { id: 0, videoSrc: "/images/reel4.mp4", tag: "New Arrivals 2025", title: "Paintings of\nTradition &\nGrandeur", btnText: "Explore Collection" },
+    { id: 1, videoSrc: "/images/reel5.mp4", tag: "Curated Collections", title: "Authentic\nTanjore Paintings", btnText: "Shop Now" },
+    { id: 2, videoSrc: "/images/reel6.mp4", tag: "Wedding Season", title: "Your Favorite\nIdols in Gold", btnText: "Bridal Collection" }
   ];
 
   const products = [
-    { id: 1, name: "Peacock Painting", img: "src/images/prod1.png", price: "₹22,450", oldPrice: null, color: "Deep Maroon & Gold", badge: "New" },
-    { id: 2, name: "Lord Muruga", img: "src/images/prod2.png", price: "₹27,554", oldPrice: null, color: "Royal Blue & Silver", badge: null },
-    { id: 3, name: "Vishnu 24K", img: "src/images/prod3.png", price: "₹17,024", oldPrice: "₹21,000", color: "Forest Green", badge: "Trending" },
-    { id: 4, name: "Floral Painting", img: "src/images/prod4.png", price: "₹19,800", oldPrice: null, color: "Peacock Blue", badge: null },
-    { id: 5, name: "Radha and Krishna", img: "src/images/prod5.png", price: "₹23,990", oldPrice: null, color: "Ivory & Rose Gold", badge: "Best Seller" },
+    { id: 1, name: "Peacock Painting", img: "/images/prod1.png", price: "₹22,450", oldPrice: null, color: "Deep Maroon & Gold", badge: "New" },
+    { id: 2, name: "Lord Muruga", img: "/images/prod2.png", price: "₹27,554", oldPrice: null, color: "Royal Blue & Silver", badge: null },
+    { id: 3, name: "Vishnu 24K", img: "/images/prod3.png", price: "₹17,024", oldPrice: "₹21,000", color: "Forest Green", badge: "Trending" },
+    { id: 4, name: "Floral Painting", img: "/images/prod4.png", price: "₹19,800", oldPrice: null, color: "Peacock Blue", badge: null },
+    { id: 5, name: "Radha and Krishna", img: "/images/prod5.png", price: "₹23,990", oldPrice: null, color: "Ivory & Rose Gold", badge: "Best Seller" },
   ];
 
   // Handle Page Loader
@@ -174,7 +174,7 @@ const Home = () => {
         ))}
         
         {/* Decorative Vector Frame */}
-        <div className="absolute inset-0 pointer-events-none z-[6] bg-[url('src/images/vector3.png')] bg-no-repeat bg-center bg-[length:99%_99%] opacity-50"></div>
+        <div className="absolute inset-0 pointer-events-none z-[6] bg-[url('/images/vector3.png')] bg-no-repeat bg-center bg-[length:99%_99%] opacity-50"></div>
         
         <button className="absolute top-1/2 -translate-y-1/2 left-[24px] z-10 w-[48px] h-[48px] rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white flex items-center justify-center cursor-pointer transition-all duration-300 hover:bg-[#b8892a] hover:border-[#b8892a]" onClick={prevSlide}><ChevronLeft size={24} /></button>
         <button className="absolute top-1/2 -translate-y-1/2 right-[24px] z-10 w-[48px] h-[48px] rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white flex items-center justify-center cursor-pointer transition-all duration-300 hover:bg-[#b8892a] hover:border-[#b8892a]" onClick={nextSlide}><ChevronRight size={24} /></button>
@@ -186,7 +186,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="block leading-[0] overflow-hidden"><img src="src/images/ribbon-top.svg" alt="" className="w-full h-auto block" /></div>
+      <div className="block leading-[0] overflow-hidden"><img src="/images/ribbon-top.svg" alt="" className="w-full h-auto block" /></div>
 
       {}
       <section className="bg-[#f9f7f4] py-[80px]">
@@ -209,7 +209,7 @@ const Home = () => {
             {/* Right Images Area */}
             <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-[24px]">
               <div className="relative overflow-hidden aspect-[4/5] cursor-pointer group">
-                <img src="src/images/cat1.webp" alt="Tanjore Paintings" className="w-full h-full object-cover transition-transform duration-[0.8s] ease-in-out group-hover:scale-[1.08]" />
+                <img src="/images/cat1.webp" alt="Tanjore Paintings" className="w-full h-full object-cover transition-transform duration-[0.8s] ease-in-out group-hover:scale-[1.08]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-[36px]">
                   <div className="transform translate-y-[52px] group-hover:translate-y-0 transition-transform duration-[0.6s] ease-out">
                     <span className="font-serif text-[28px] md:text-[32px] font-normal text-white block mb-[12px]">Tanjore Paintings</span>
@@ -226,7 +226,7 @@ const Home = () => {
               </div>
 
               <div className="relative overflow-hidden aspect-[4/5] cursor-pointer group">
-                <img src="src/images/cat2.webp" alt="Bronze statues" className="w-full h-full object-cover transition-transform duration-[0.8s] ease-in-out group-hover:scale-[1.08]" />
+                <img src="/images/cat2.webp" alt="Bronze statues" className="w-full h-full object-cover transition-transform duration-[0.8s] ease-in-out group-hover:scale-[1.08]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-[36px]">
                   <div className="transform translate-y-[52px] group-hover:translate-y-0 transition-transform duration-[0.6s] ease-out">
                     <span className="font-serif text-[28px] md:text-[32px] font-normal text-white block mb-[12px]">Bronze Statues</span>
@@ -246,7 +246,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="block leading-[0] overflow-hidden"><img src="src/images/ribbon-bottom.svg" alt="" className="w-full h-auto block" /></div>
+      <div className="block leading-[0] overflow-hidden"><img src="/images/ribbon-bottom.svg" alt="" className="w-full h-auto block" /></div>
 
       {}
       <section className="py-[72px]">
@@ -263,7 +263,7 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center py-[6px] pb-[28px]">
-            <img src="src/images/kolam-divider.svg" alt="" className="w-full max-w-[600px] h-auto" />
+            <img src="/images/kolam-divider.svg" alt="" className="w-full max-w-[600px] h-auto" />
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-[20px]">
@@ -296,7 +296,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="block leading-[0] overflow-hidden"><img src="src/images/ribbon-bottom.svg" alt="" className="w-full h-auto block" /></div>
+      <div className="block leading-[0] overflow-hidden"><img src="/images/ribbon-bottom.svg" alt="" className="w-full h-auto block" /></div>
 
       {}
       <section className="py-[72px] bg-white">
@@ -342,7 +342,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="block leading-[0] overflow-hidden"><img src="src/images/ribbon-bottom.svg" alt="" className="w-full h-auto block" /></div>
+      <div className="block leading-[0] overflow-hidden"><img src="/images/ribbon-bottom.svg" alt="" className="w-full h-auto block" /></div>
 
       {}
       <section className="py-[72px] bg-[#f9f7f4]">
@@ -376,7 +376,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="block leading-[0] overflow-hidden"><img src="src/images/ribbon-top.svg" alt="" className="w-full h-auto block" /></div>
+      <div className="block leading-[0] overflow-hidden"><img src="/images/ribbon-top.svg" alt="" className="w-full h-auto block" /></div>
 
       {}
       <div className="bg-[#1a1a1a] text-white py-[32px]">
@@ -398,11 +398,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="block leading-[0] overflow-hidden"><img src="src/images/ribbon-top.svg" alt="" className="w-full h-auto block" /></div>
+      <div className="block leading-[0] overflow-hidden"><img src="/images/ribbon-top.svg" alt="" className="w-full h-auto block" /></div>
 
       {/* Newsletter */}
       <div className="bg-[#f5e6c8] text-center py-[80px] px-[32px] relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none bg-[url('src/images/vector3.png')] bg-no-repeat bg-center bg-[length:99%_99%] opacity-30"></div>
+        <div className="absolute inset-0 pointer-events-none bg-[url('/images/vector3.png')] bg-no-repeat bg-center bg-[length:99%_99%] opacity-30"></div>
         <p className="text-[11px] tracking-[3px] uppercase text-[#b8892a] mb-[10px]">Stay in the Loop</p>
         <h2 className="font-serif text-[clamp(26px,3vw,42px)] font-normal leading-[1.2] mb-[12px]">Get Exclusive Offers &amp; New Arrivals</h2>
         <p className="text-[14px] text-[#777] mb-[28px] relative z-10">Subscribe for the latest collections, offers, and styling inspiration.</p>
@@ -437,7 +437,7 @@ const Home = () => {
           </div>
 
           <div className="hidden lg:flex items-stretch w-[9px] mx-[8px] opacity-20">
-            <img src="src/images/footer-divider-v.svg" alt="" className="w-full h-full object-fill" />
+            <img src="/images/footer-divider-v.svg" alt="" className="w-full h-full object-fill" />
           </div>
 
           <div className="mb-8 lg:mb-0">

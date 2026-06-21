@@ -84,7 +84,7 @@ function Navbar() {
           <Link to="/" className="flex items-center gap-[14px]">
             {/* Left-most image */}
             <img 
-              src="src/images/logo.png" 
+              src="/images/logo.png"     
               alt="Parampara Handicrafts Logo" 
               className="w-[46px] h-[46px] object-contain" 
             />

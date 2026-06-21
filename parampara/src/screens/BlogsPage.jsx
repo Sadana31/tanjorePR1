@@ -7,7 +7,7 @@ const blogPosts = [
     id: 1,
     title: "The Legacy of Tanjore: A Tale of Gold and Devotion",
     category: "Heritage",
-    image: "src/images/hero1.webp",
+    image: "/images/hero1.webp",
     date: "June 12, 2026",
     readTime: "6 min read",
     author: "Lakshmi Narayanan",
@@ -29,7 +29,7 @@ const blogPosts = [
     id: 2,
     title: "How to Choose the Perfect Bronze Idol for your Home",
     category: "Buying Guide",
-    image: "src/images/cat2.webp",
+    image: "/images/cat2.webp",
     date: "May 28, 2026",
     readTime: "4 min read",
     author: "Ravi Shankar",
@@ -54,7 +54,7 @@ const blogPosts = [
     id: 3,
     title: "Vastu Shastra and the Placement of Divine Art",
     category: "Spiritual Living",
-    image: "src/images/hero2.webp",
+    image: "/images/hero2.webp",
     date: "April 15, 2026",
     readTime: "5 min read",
     author: "Priya Menon",
@@ -80,7 +80,7 @@ const blogPosts = [
     id: 4,
     title: "The Lost Wax Process: Crafting Eternity",
     category: "Craftsmanship",
-    image: "src/images/cat1.webp",
+    image: "/images/cat1.webp",
     date: "March 02, 2026",
     readTime: "7 min read",
     author: "Lakshmi Narayanan",
@@ -185,7 +185,7 @@ const BlogPage = () => {
         {}
         {view === 'list' && (
           <div className="bg-stone-900 text-white py-20 text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('src/images/vector3.png')] bg-center opacity-10 mix-blend-overlay"></div>
+            <div className="absolute inset-0 bg-[url('/images/vector3.png')] bg-center opacity-10 mix-blend-overlay"></div>
             <p className="text-amber-500 text-xs uppercase tracking-[0.3em] font-bold mb-4 relative z-10">Stories & Traditions</p>
             <h1 className="text-5xl md:text-6xl font-serif relative z-10">The Parampara Journal</h1>
           </div>
@@ -281,7 +281,7 @@ const BlogPage = () => {
 
                 {/* Newsletter Widget */}
                 <div className="bg-[#f5e6c8] p-8 text-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[url('src/images/vector3.png')] opacity-20 pointer-events-none mix-blend-multiply"></div>
+                  <div className="absolute inset-0 bg-[url('/images/vector3.png')] opacity-20 pointer-events-none mix-blend-multiply"></div>
                   <h4 className="font-serif text-2xl mb-2 text-stone-900 relative z-10">Never Miss a Story</h4>
                   <p className="text-stone-600 text-sm mb-6 relative z-10">Subscribe to get our latest articles and cultural insights directly to your inbox.</p>
                   <form className="relative z-10 space-y-3" onSubmit={(e) => e.preventDefault()}>

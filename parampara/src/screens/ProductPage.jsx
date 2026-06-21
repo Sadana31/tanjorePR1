@@ -6,7 +6,7 @@ export default function ProductDetails() {
     
   const [product, setProduct] = useState({
     name: "Authentic Tanjore Painting",
-    img: "src/images/prod1.png",
+    img: "/images/prod1.png",
     price: "22,450"
   });
 
